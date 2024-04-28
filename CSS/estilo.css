@@ -29,3 +29,33 @@ nav {
 footer {
     background-color: royalblue;
 }
+article {
+    margin-bottom: 40px; 
+    clear: both; 
+    
+}
+
+.izquierda {
+    float: left;
+    width: 45%; 
+    margin-top: 20px;
+    margin-right: 20px; 
+    padding: 10px;
+    clear: left; 
+}
+
+.derecha {
+    float: right;
+    width: 45%; 
+    margin-top: 20px;
+    margin-left: 20px; 
+    padding: 10px;
+    clear: right;
+}
+
+.letrasD,
+.letrasI {
+    width: 99%; 
+    padding: 10px;
+    
+}
