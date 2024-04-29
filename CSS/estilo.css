@@ -27,9 +27,24 @@ nav {
     right: 0;
 }
 
+img, iframe, video {
+    border-radius: 30px;
+}
+
+p {
+    text-align: justify;
+}
+
 #logo {
     height: 10%;
     width: 10%;
+    border-radius: 0;
+}
+
+#title {
+    font-size: 190%;
+    margin-top: 0;
+    margin-bottom: 4%;
 }
 
 .letra,
@@ -43,9 +58,10 @@ nav {
 }
 
 footer {
-    background-color: royalblue;
+    background-color: #88bc24;
     margin-top: 3%;
     padding: 1%;
+    font-weight: bold;
 }
 
 article {
@@ -70,4 +86,42 @@ article {
     width: 99%;
     padding: 10px;
     flex-direction: column;
+}
+
+.mediaEvento {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    padding: 20px;
+}
+
+.fotoEvento {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    padding: 20px;
+}
+
+.fotoContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: rgb(199, 219, 162);
+    border-radius: 20px;
+}
+
+#contenedorActividades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner {
+    width: 475px;
+    height: 110px;
+    border-radius: 20px;
 }
