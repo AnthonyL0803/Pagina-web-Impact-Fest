@@ -13,6 +13,7 @@ main {
     margin: 100px;
     margin-top: 40px;
     margin-bottom: 0;
+    border-radius: 20px;
 }
 
 nav {
@@ -87,6 +88,56 @@ article {
     padding: 10px;
     flex-direction: column;
 }
+
+.articuloOpi{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.imagenOpi{
+    width: 200px;
+    margin: 50px;
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 5px rgba(65, 194, 74, 0.566);
+}
+
+.textoUsuario{
+    font-size: 30px;
+    font-style: oblique;
+}
+.textoOpi{
+    font-size: 18px;
+    color: rgba(47, 47, 47, 0.8);
+    margin-right: 100px;
+}
+.contenedor-texto-opi{
+    background-color: #cccccc;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+#tituloOpi{
+    font-size: 45px;
+    font-weight: bold;
+    color: rgba(0, 0, 0);
+    margin-left: 20px;
+    font-style: oblique;
+}
+#subtituloOpi{
+    font-size: 22px;
+    font-weight: bold;
+    font-family:sans-serif;
+    color: rgba(85, 85, 85, 0.800);
+    margin-left: 20px;
+}
+
+
 
 .mediaEvento {
     width: 300px;
