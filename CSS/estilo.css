@@ -10,13 +10,13 @@ body {
 main {
     background-color: rgb(255, 255, 255);
     padding: 2%;
-    margin: 7%;
+    margin: 13%;
     margin-top: 3%;
     margin-bottom: 0%;
     border-radius: 20px;
 }
 
-nav {
+.navegacion {
     background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
@@ -49,6 +49,7 @@ p {
 
 .letra,
 .social {
+    display: flex;
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 1.25em;
@@ -140,16 +141,11 @@ article {
     margin-left: 2%;
 }
 
-
-
 .fotoContainer {
     display: flex;
     flex-direction: row;
     margin-bottom: 1.5%;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    padding: 1%;
     background-color: rgb(199, 219, 162);
     border-radius: 20px;
 }
@@ -164,12 +160,19 @@ article {
 
 .mediaEvento {
     width: 23%;
+    height: 100%;
     display: flex;
     padding: 1.5%;
 }
 
+#mapa {
+    width: 40%;
+    height: auto;
+}
+
 #videoEvento {
     width: 11.5%;
+    height: auto;
     display: flex;
     padding: 4%;
     border-radius: 60px;
@@ -177,36 +180,115 @@ article {
 
 #contenedorActividades {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 #banner {
-    width: 100%;
-    height: 36.5%;
+    width: 95%;
+    height: auto;
     border-radius: 20px;
+    margin-bottom: 2%;
 }
 
-@media (min-width: 768px) {
-    /* ESTOS MEDIAQUERYS SON DE EJEMPLO LOS TENEMOS QUE BORRAR TODOS */
+@media (max-width: 1200px) {
 
-    .contenedor-flex {
+    .fotoContainer {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
     }
 
-    .contenido-principal {
-        flex-basis: calc(60% - 1rem);
-        order: 2;
+    #contenedorActividades {
+        flex-direction: column;
+        padding: 0%;
     }
 
-    .sidebar-1 {
-        flex-basis: calc(20% - 1rem);
-        order: 1;
+    .mediaEvento {
+        width: 35%;
+        height: 100%;
     }
 
-    .sidebar-2 {
-        flex-basis: calc(20% - 1rem);
-        order: 2;
+    .fotoEvento {
+        width: 50%;
+        height: auto;
+    }
+
+    #videoEvento {    
+        width: 25%;
+        height: auto;
+    }
+
+    #mapa {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .letra {
+        font-size: 1rem;
+    }
+
+    #logo {
+        height: 15%;
+        width: 15%;
+    }
+
+    .fotoContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    #contenedorActividades {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .mediaEvento {
+        display: none;
+    }
+
+    .fotoEvento {
+        width: 100%;
+        height: 100%;
+    }
+
+    #videoEvento {
+        display: none;
+    }
+
+    #banner {
+        width: 100%;
+        height: 30%;
+    }
+
+    #title {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 450px) {
+    #logo {
+        height: 20%;
+        width: 20%;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .letra {
+        font-size: 1rem;
+    }
+
+    #title {
+        font-size: 1.5em;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .fotoEvento {
+        border-radius: 30px;
     }
 }
