@@ -78,9 +78,11 @@ article {
 
 .fotosActividades {
     width: 45%;
+    height: 100%;
     margin-top: 1.5%;
     margin-left: 1.5%;
     padding: 10px;
+
 }
 
 .textoActividades {
@@ -239,6 +241,25 @@ article {
 }
 
 @media (max-width: 768px) {
+
+    .izquierda,
+    .derecha {
+        flex-direction: column;
+    }
+
+    .fotosActividades {
+        width: 90%;
+        margin-right: 8%;
+        height: auto;
+        order: 1;
+    }
+
+    .textoActividades {
+        margin-right: 10%;
+        width: 95%;
+        order: 2;
+    }
+
     .articuloOpi {
         flex-direction: column;
         align-items: center;
