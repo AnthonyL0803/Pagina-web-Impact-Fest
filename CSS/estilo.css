@@ -77,9 +77,11 @@ article {
 
 .fotosActividades {
     width: 45%;
+    height: 100%;
     margin-top: 1.5%;
     margin-left: 1.5%;
     padding: 10px;
+    
 }
 
 .textoActividades {
@@ -187,26 +189,21 @@ article {
     border-radius: 20px;
 }
 
-@media (min-width: 768px) {
-    /* ESTOS MEDIAQUERYS SON DE EJEMPLO LOS TENEMOS QUE BORRAR TODOS */
-
-    .contenedor-flex {
-        display: flex;
-        justify-content: space-between;
+@media (max-width: 768px) {
+   
+    .izquierda, .derecha {
+        flex-direction: column;
     }
 
-    .contenido-principal {
-        flex-basis: calc(60% - 1rem);
-        order: 2;
-    }
-
-    .sidebar-1 {
-        flex-basis: calc(20% - 1rem);
+    .fotosActividades {
+        width: 90%;
+        margin-right: 8%;
+        height: auto;
         order: 1;
     }
-
-    .sidebar-2 {
-        flex-basis: calc(20% - 1rem);
-        order: 2;
+    .textoActividades {
+        margin-right: 10%;
+        width: 95%;
+        order:2;
     }
 }
