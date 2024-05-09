@@ -192,73 +192,12 @@ article {
 }
 
 @media (max-width: 1200px) {
-@media screen and (max-width: 768px) {
-    .articuloOpi {
-        flex-direction: column; /* Cambia la dirección del flex a columna */
-        align-items: center; /* Centra los elementos */
-        margin: 2%;
-    }
-
-    .fotoContainer {
-        display: flex;
-        align-items: center;
-    .imagenOpi {
-        display: none;
-    }
-
-    #contenedorActividades {
-        flex-direction: column;
-        padding: 0%;
-    .textoOpi {
-        margin-right: 0; /* Elimina el margen derecho */
-    }
-
-    .mediaEvento {
-        width: 35%;
-        height: 100%;
-    .contenedor-texto-opi {
-        padding: 3%;
-        margin: 2%;
-    }
-
-    .fotoEvento {
-        width: 50%;
-        height: auto;
-    #tituloOpi {
-        font-size: 2em; 
-    }
-
-    #videoEvento {    
-        width: 25%;
-        height: auto;
-    }
-
-    #mapa {
-        display: none;
-    }
-
-    #subtituloOpi {
-        font-size: 0.8em; 
-    }
-
-    .mediaEvento {
-        width: 100%;
-        margin: 2% 0;
-    }
-
-    .fotoEvento, #videoEvento {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
     .imagenOpi {
         width: 25%;
     }
 
     #tituloOpi {
-        font-size: 2.25em; 
+        font-size: 2.25em;
     }
 
     #subtituloOpi {
@@ -268,9 +207,76 @@ article {
     .mediaEvento {
         width: 30%;
     }
+
+    .fotoContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    #contenedorActividades {
+        flex-direction: column;
+        padding: 0%;
+    }
+
+    .mediaEvento {
+        width: 35%;
+        height: 100%;
+    }
+
+    .fotoEvento {
+        width: 50%;
+        height: auto;
+    }
+
+    #videoEvento {
+        width: 25%;
+        height: auto;
+    }
+
+    #mapa {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
+    .articuloOpi {
+        flex-direction: column;
+        align-items: center;
+        margin: 2%;
+    }
+
+    .imagenOpi {
+        display: none;
+    }
+
+    .textoOpi {
+        margin-right: 0;
+    }
+
+    .contenedor-texto-opi {
+        padding: 3%;
+        margin: 2%;
+    }
+
+    #tituloOpi {
+        font-size: 2em;
+    }
+
+    #subtituloOpi {
+        font-size: 0.8em;
+    }
+
+    .mediaEvento {
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    .fotoEvento,
+    #videoEvento {
+        width: 100px;
+        height: 100px;
+    }
+
     .letra {
         font-size: 1rem;
     }
